@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paws and Paths</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🐾Paws and Paths</h1>
+<h2>Happy Dogs, Happy Owners!</h2>
+<p>Friendly and reliable dog wallking and pet sitting in your neighboorhood.</p>
+<p>Friendly and caring pet care right here in our neighboorhood</p>
+<h2>About Me</h2>
+<img src="dog.png" alt="My dog">
+<p> I love dogs and I have a dog of my own! I am comfortable caring for dogs and enjoy spending time with them. My goal is to help dogs get extra exercise and attention and time outside. Its important for them to stay active and happy.</p>
+<h2> My Availablility</h2>
+
+<div class+"schedule">
+<p><strong>Monday:</strong> 6:00-7:00 AM</p>
+<p><strong>Tuesday:</strong> 6:00-7:00 AM and 4:00-9:00 PM</p>
+<p><strong>Wendsday:</strong> 6:00-7:00 AM</p>
+<p><strong>Thursday:</strong> 6:00-7:00 AM and 4:00-9:00 PM</p>
+<p><strong>Friday:</strong> 6:00-7:00 AM</p>
+<p><strong>Saturday:</strong> 7:00 AM-9:00 PM</p>
+<p><strong>Sunday:</strong> 10:00 AM-5:45 PM</p>
+<p><em> Sunday availablility may vary.</em></p>
+</div>
+<h2>Our Services</h2>
+<div class="services">
+<div class="service-card">
+<p>🐕 15-minute dog walk - $8</p>
+</div>
+<div class="service-card">
+<p>🐕‍🦺 30-minute dog walk - $12</p>
+</div>
+<div class="service-card">
+<p>🏠 Pet check-in - $10</p>
+</div>
+</div>   
+<h2>Book a Service</h2>
+<form id="booking-form" onsubmit="event.preventDefault(); document,getElementById('message').textContent='thanks! Your booking request has been recived. i will contact you to confirm.';">
+<lable>Your name:</lable>
+<input type="text" name="name">
+<label>Dog's name:</label>
+<input type="text" name="dog_name">
+<br>
+<label>Choose a service:</label>
+<select name="service">
+<option>15-minute dog walk - $8</option>
+<option>30-minute dog walk - $12</option>
+<option> Pet check-in - $10</option>
+</select>
+<label>Date:</label>
+<input type="date" name="date">
+<br>
+<label>Time:</label>                                                                                                                                        
+<input type="time" name="time">
+<br>
+<label> Anything I should know about your dog?</label>
+<textarea></textarea>
+<br>
+<button type="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfoIuR0XKOVlOthuIW-LdVoxMtboaMUtcrrgFnS3PMm7OxUqg/viewform?usp=header', '_blank')">Request Booking</button>
+<p id="message"></p>
+</form>
+<h2>Before you book</h2>
+<p> Booking requests are not comfirmed until I approve the date and time.</p>
+<h2>Policies</h2>
+<h3>Payment</h3>
+<p>payment is due:when dog is returned.</p>
+<p>Payment method:Apple pay or cash</p>
+<h3> Cancellations</h3>
+<p>Please give at least a 12 hour's notice if you need to cancel</p>
+<p>Cancellation policy: at least 12 hour notice for cancelation</p>
+<h3>Availablility</h3>
+<p>My availablility can change beacuse of school, practices, and other activites. A booking is not confirmed until i approve the date and time.</p>
+<h3> Services</h3>
+<p>I currently provide dog wallking and sitting</p>
+<h3>Other Important Information</h3>
+<p>all supplies should be provied with your pet.</p>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:alvaro.esco@yahoo.com">alvaro.esco@yahoo.com</a></p>
+<script>
+document.getElementById("booking-form").addEventListener("submit", fumction(event) {
+event.preventDefault();
+document.getElementById("message").textContent=
+"Thanks! your booking request has been recived. I will contact you to confirm.";
+});
+</script>
+</body>
+</html>
